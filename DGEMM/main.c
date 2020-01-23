@@ -12,8 +12,8 @@
 #include <limits.h>
 #include "DGEMM.h"
 
-//#define ROWLEN 1024
-//#define MSIZE [ROWLEN][ROWLEN]
+/*#define ROWLEN 1024
+#define MSIZE [ROWLEN][ROWLEN]*/
 
 /*void mm(double a[ROWLEN][ROWLEN], double b[ROWLEN][ROWLEN], double c[ROWLEN][ROWLEN]);
 void dgemm();
