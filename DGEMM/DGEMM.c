@@ -3,7 +3,7 @@
 //  DGEMM
 //
 //  Created by Steven Moody on 1/23/20.
-//  Copyright © 2020 Steven Moody. All rights reserved.
+//  Copyright © 2020 Steven Moody. All rights reserved
 //
 
 #include "DGEMM.h"
