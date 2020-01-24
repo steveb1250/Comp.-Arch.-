@@ -12,13 +12,20 @@
 #include <limits.h>
 #include "DGEMM.h"
 
-#define ROWLEN 1024
-#define MSIZE [ROWLEN][ROWLEN]
+
 
 int main(int argc, char *argv[]) {
     // seed random generator
     srand(2020);
-        
+    
+    double* a;
+    double* b;
+    double* c;
+    
+    a = malloc(ROWLEN*ROWLEN* sizeof(double));
+    b = malloc(ROWLEN*ROWLEN* sizeof(double));
+    c = malloc(ROWLEN*ROWLEN* sizeof(double));
+    
     clock_t start, end;
     double cpu_time_used;
     start = clock();
