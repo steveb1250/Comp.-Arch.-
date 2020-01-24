@@ -6,10 +6,7 @@
 //  Copyright © 2020 Steven Moody. All rights reserved.
 //
 // thanks to Joshua Skootsky
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <limits.h>
+
 #include "DGEMM.h"
 
 
@@ -18,9 +15,7 @@ int main(int argc, char *argv[]) {
     // seed random generator
     srand(2020);
     
-    double* a;
-    double* b;
-    double* c;
+    
     
     a = malloc(ROWLEN*ROWLEN* sizeof(double));
     b = malloc(ROWLEN*ROWLEN* sizeof(double));
