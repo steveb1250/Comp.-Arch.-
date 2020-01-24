@@ -12,20 +12,6 @@
 #define ROWLEN 1024
 #define MSIZE [ROWLEN][ROWLEN]
 
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <limits.h>
-
-double* a;
-double* b;
-double* c;
-
-a = malloc(ROWLEN*ROWLEN* sizeof(double));
-b = malloc(ROWLEN*ROWLEN* sizeof(double));
-c = malloc(ROWLEN*ROWLEN* sizeof(double));
-
     void ge(int n, double* A, double* B, double* C);
 
     void mm(double a[ROWLEN][ROWLEN], double b[ROWLEN][ROWLEN], double c[ROWLEN][ROWLEN]);
