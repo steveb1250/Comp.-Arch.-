@@ -12,16 +12,10 @@
 #include <limits.h>
 #include "DGEMM.h"
 
-double* a;
-double* b;
-double* c;
+
 
 void ge(int n, double* A, double* B, double* C){
     
-    
-    a = malloc(ROWLEN*ROWLEN* sizeof(double));
-    b = malloc(ROWLEN*ROWLEN* sizeof(double));
-    c = malloc(ROWLEN*ROWLEN* sizeof(double));
     for(int i=0; i< ROWLEN; i++) {
         for(int j=0; j< ROWLEN; j++) {
             *(a+i+j*ROWLEN) = (double) rand()/UINT_MAX;
